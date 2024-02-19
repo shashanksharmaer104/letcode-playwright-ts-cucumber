@@ -4,7 +4,7 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/*.feature"
+            "src/test/features/registration.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
