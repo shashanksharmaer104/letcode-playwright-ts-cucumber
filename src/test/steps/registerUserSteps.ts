@@ -11,8 +11,8 @@ Given('User navigate to registartion', async function () {
 });
        
 When('User register with all details', async function () {
-    //const username = "testuser" + Date.now.toString();
-    await registerPage.registerUser("firstname", "lastname", "testuser098791", "Pass@123", "Pass@123", "m");
+    const username = "te_" + Date.now().toString();
+    await registerPage.registerUser("firstname", "lastname", username, "Pass@123", "Pass@123", "m");
 });
        
 Then('User should be able to see success message', async function () {
