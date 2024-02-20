@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "cucumber-js test",
+    "test:failed": "cucumber-js -p rerun @rerun.txt"
   },
   "keywords": [],
   "author": "",

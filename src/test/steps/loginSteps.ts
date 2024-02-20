@@ -28,8 +28,10 @@ When('User click on the login button', async function () {
       
 Then('Login should be success', async function () {
   await pageFixture.page.waitForTimeout(3000);
-  const text = pageFixture.page.locator("//button[contains(@class,'mat-focus-indicator mat-menu-trigger')]//span[1]").textContent;
-  console.log("Username is: " + text);
+  const locator = pageFixture.page.locator("//button[contains(@class,'mat-focus-indicator mat-menu-trigger')]//span[1]");
+  await expect(locator).toBeVisible();
+  const userName = await locator.textContent();
+  console.log("Username: " + userName);
 });
       
 When('Login should fail', async function () {
