@@ -1,6 +1,7 @@
 node_modules/
-/test-result/screenshots/
-/test-reports/
+/test-result/screenshots/*
+/test-reports/*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+@rerun.txt
