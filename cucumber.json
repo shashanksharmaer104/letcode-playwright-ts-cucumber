@@ -17,8 +17,8 @@
             "ts-node/register"
         ],
         "format": [
-            "html:test-reports/cucumber-report.html",
-            "json:test-reports/cucumber-report.json",
+            "html:test-results/reports/cucumber-report.html",
+            "json:test-results/reports/reportscucumber-report.json",
             "rerun:@rerun.txt"
         ],
         "parallel": 2
@@ -37,8 +37,8 @@
             "ts-node/register"
         ],
         "format": [
-            "html:test-reports/cucumber-report.html",
-            "json:test-reports/cucumber-report.json",
+            "html:test-results/reports/cucumber-report.html",
+            "json:test-results/reports/reportscucumber-report.json",
             "rerun:@rerun.txt"
         ],
         "parallel": 2

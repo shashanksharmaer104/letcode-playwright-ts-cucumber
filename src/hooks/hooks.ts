@@ -21,7 +21,7 @@ After(async function({ pickle, result }) {
     // take screenshot
     if(result?.status == Status.PASSED) {
         img = await pageFixture.page.screenshot({
-            path: `./test-result/screenshots/${pickle.name}.png`, type: "png"
+            path: `./test-results/screenshots/${pickle.name}.png`, type: "png"
         });
         this.attach(img, "image/png");
     }
